@@ -1,0 +1,64 @@
+.footer-black {
+    width: auto;
+    height: 144px;
+    background-color: black;
+    display: flex;   
+    align-items: end;
+}
+
+body {
+    margin: 0;
+}
+
+.footer-gray {
+    width: auto;
+    height: 539px;
+    background-color: gray;
+}
+
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 20px;
+    height: 60px;
+    justify-content: space-between; /* Optional: to space out Brandlogo and nav */
+}
+
+.bodyGrid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: 24px;
+    column-width: 78px;
+    margin-left: 120px;
+    margin-right: 120px;
+    height: 100vh;
+}
+
+.Brandlogo {
+    font-family: Montserrat;
+    font-size: 32px; /* Added px unit */
+}
+
+.home {
+    font-family: Montserrat;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; /* Corrected property */
+    gap: 20px; /* Optional: to add space between nav items */
+}
+
+.Hero{
+    height: 496px;
+    background-color: #F7F7F7;
+}
+.HeroContainer{
+    width: 533px;
+    font-family: Montserrat;
+    font-size: 88px;
+    font-weight: bold;
+ }
