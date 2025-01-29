@@ -8,23 +8,38 @@ body {
 }
 
 .circle {
-    width: 50px;
-    height: 50px;
+    width: 200px;
+    height: 200px;
     background-color: #fff;
-    border-radius: 5%;
-    animation: expand 4s ease-in-out infinite;
+    border-radius: 50%;
+    animation: expand 4s ease-in-out ; /* Added infinite for continuous animation */
+    animation-fill-mode: forwards;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 @keyframes expand {
     0% {
         transform: scale(1);
+        opacity: 1;
     }
     50% {
         transform: scale(5);
         opacity: 0.5;
     }
-    100% {
-        transform: scale(1);
-        opacity: 1;
+    75% {
+        transform: scale(5); /* Hold the maximum size */
+        opacity: 0.5; /* Keep the opacity */
     }
+    100% {
+        transform: scale(5);
+        opacity: 1;
+        background-color: gray;
+    }
+}
+.Btn{
+    color: black;
+    background-color: none;
 }
